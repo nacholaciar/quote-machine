@@ -26,12 +26,11 @@ const QuoteBox = () => {
             className="card text-white"
             style={{ backgroundColor: "#1f959b", borderRadius: "15px" }}
           >
-            <div className="card-body p-5">
+            <div className="card-body p-5 text-start">
               <FaQuoteLeft size={32} className="mb-4" />
               <QuoteText />
               <hr />
               <QuoteAuthor />
-
               <div className="d-flex justify-content-end mt-3 gap-2">
                 <NewQuoteButton />
                 <TweetQuoteButton />

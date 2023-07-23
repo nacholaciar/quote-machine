@@ -6,7 +6,7 @@ const TweetQuoteButton = () => {
   const author = useSelector((state) => state.quote.author);
 
   const tweetLink = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-    '"' + quote + '"\n' + "- " + author
+    `"${quote}"\n- ${author}`
   )}`;
 
   return (
@@ -20,7 +20,6 @@ const TweetQuoteButton = () => {
       <SiTwitter size={24} />
     </a>
   );
-  b;
 };
 
 export default TweetQuoteButton;
